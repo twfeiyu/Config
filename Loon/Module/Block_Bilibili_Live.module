@@ -1,0 +1,11 @@
+#!name=屏蔽B站直播
+#!desc=屏蔽B站直播(2022-09-16 08:50)
+
+[Rule]
+DOMAIN-SUFFIX,api.sobot.com,REJECT
+DOMAIN-SUFFIX,live-trace.bilibili.com,REJECT
+DOMAIN-SUFFIX,api.live.bilibili.com,REJECT
+
+[URL Rewrite]
+https://api.bilibili.com/x/web-interface/nav reject-200
+http://.*/live-bvc/\d+/ reject-200
