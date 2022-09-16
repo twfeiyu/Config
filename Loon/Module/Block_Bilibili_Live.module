@@ -8,6 +8,6 @@ DOMAIN-SUFFIX,api.live.bilibili.com,REJECT
 
 [URL Rewrite]
 #屏蔽公众号直播姬充值接口
-https://api.bilibili.com/x/web-interface/nav reject-200
+^https?:\/\/api.bilibili.com\/x\/web-interface\/nav reject-200
 #屏蔽直播间
-http://.*/live-bvc/\d+/ reject-200
+^http:\/\/.*\/live-bvc\/\d+\/ reject-200
