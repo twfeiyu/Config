@@ -2,10 +2,12 @@
 #!desc=屏蔽B站直播(2022-09-16 08:50)
 
 [Rule]
-DOMAIN-SUFFIX,api.sobot.com,REJECT
+#DOMAIN-SUFFIX,api.sobot.com,REJECT
 DOMAIN-SUFFIX,live-trace.bilibili.com,REJECT
 DOMAIN-SUFFIX,api.live.bilibili.com,REJECT
 
 [URL Rewrite]
+#屏蔽公众号直播姬充值接口
 https://api.bilibili.com/x/web-interface/nav reject-200
+#屏蔽直播间
 http://.*/live-bvc/\d+/ reject-200
