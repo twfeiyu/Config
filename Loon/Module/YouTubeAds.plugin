@@ -16,4 +16,4 @@ http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|p
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject-img
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com
+hostname = *.googlevideo.com, youtubei.googleapis.com
