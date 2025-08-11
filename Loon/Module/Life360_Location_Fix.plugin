@@ -1,0 +1,5 @@
+[MITM]
+hostname = api.life360.com
+
+[SCRIPT]
+http-response ^https?://api\.life360\.com/v3/circles/.+/members script-path=life360_fix.js, requires-body=true, tag=Life360坐标纠偏
