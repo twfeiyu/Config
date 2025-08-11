@@ -57,11 +57,17 @@ let obj = JSON.parse(body);
 if (obj.data && obj.data.items && Array.isArray(obj.data.items)) {
   for (let item of obj.data.items) {
     if (item.latitude && item.longitude) {
+      console.log(`纠偏前 - Device: ${item.deviceId}, Lat: ${item.latitude}, Lng: ${item.longitude}`);
       let [newLat, newLng] = wgs2gcj(parseFloat(item.latitude), parseFloat(item.longitude));
       item.latitude = newLat;
       item.longitude = newLng;
+      console.log(`纠偏后 - Device: ${item.deviceId}, Lat: ${newLat}, Lng: ${newLng}`);
+    } else {
+      console.log(`跳过 - Device: ${item.deviceId}, 无坐标`);
     }
   }
+} else {
+  console.log("无 items 数组，无法纠偏");
 }
 
 $done({ body: JSON.stringify(obj) });
