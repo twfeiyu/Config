@@ -2,6 +2,7 @@
 // Life360 坐标纠偏脚本 (WGS-84 to GCJ-02)
 // 仅限个人使用，基于标准偏移算法
 // 来源：开源纠偏算法 (eviltransform 等)
+// 针对 /v5/circles/devices/locations API 修正 latitude/longitude
 
 // 常量定义
 const PI = 3.1415926535897932384626;
@@ -53,12 +54,12 @@ function wgs2gcj(wgsLat, wgsLng) {
 let body = $response.body;
 let obj = JSON.parse(body);
 
-if (obj.members && Array.isArray(obj.members)) {
-  for (let member of obj.members) {
-    if (member.location && member.location.latitude && member.location.longitude) {
-      let [newLat, newLng] = wgs2gcj(parseFloat(member.location.latitude), parseFloat(member.location.longitude));
-      member.location.latitude = newLat;
-      member.location.longitude = newLng;
+if (obj.data && obj.data.items && Array.isArray(obj.data.items)) {
+  for (let item of obj.data.items) {
+    if (item.latitude && item.longitude) {
+      let [newLat, newLng] = wgs2gcj(parseFloat(item.latitude), parseFloat(item.longitude));
+      item.latitude = newLat;
+      item.longitude = newLng;
     }
   }
 }
