@@ -1,6 +1,9 @@
 // -*- coding: utf-8 -*-
 // Life360 坐标纠偏脚本 (WGS-84 to GCJ-02)
 // 仅限个人使用，基于标准偏移算法
+// 作者: twfeiyu@gmail.com
+// Github: https://github.com/twfeiyu
+// 更新时间: 2025/08/12
 // 来源：开源纠偏算法 (eviltransform 等)
 // 针对 /v5/circles/devices/locations API 修正 latitude/longitude
 
