@@ -46,6 +46,8 @@ DOMAIN, jules.google
 DOMAIN, jules.google.com
 DOMAIN, labs.google
 DOMAIN, aisandbox-pa.googleapis.com
+#网页开启Gemini需要
+DOMAIN-SUFFIX, clients6.google.com
 
 # Google Antigravity
 DOMAIN, antigravity.google
