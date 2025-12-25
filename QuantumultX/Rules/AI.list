@@ -1,84 +1,133 @@
-# NAME: Gemini
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:02
-# DOMAIN: 3
-# DOMAIN-KEYWORD: 3
-# DOMAIN-SUFFIX: 7
-# TOTAL: 13
-DOMAIN,ai.google.dev
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,makersuite.google.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
+# =========================
+# OpenAI
+# =========================
+HOST,chatgpt.livekit.cloud
+HOST,host.livekit.cloud
+HOST,openai.com.cdn.cloudflare.net
+HOST,openaiapi-site.azureedge.net
+HOST,openaicomproductionae4b.blob.core.windows.net
+HOST,production-openaicom-storage.azureedge.net
+HOST,turn.livekit.cloud
 
-# NAME: OpenAI
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:00
-# DOMAIN: 7
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 24
-# IP-ASN: 1
-# IP-CIDR: 2
-# TOTAL: 35
-DOMAIN,browser-intake-datadoghq.com
-DOMAIN,chat.openai.com.cdn.cloudflare.net
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN,static.cloudflareinsights.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,chatgpt.livekit.cloud
-DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,host.livekit.cloud
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,observeit.net
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,openaicom.imgix.net
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
-DOMAIN-SUFFIX,turn.livekit.cloud
-DOMAIN-KEYWORD,openai
-IP-CIDR,24.199.123.28/32,no-resolve
-IP-CIDR,64.23.132.171/32,no-resolve
-IP-ASN,20473,no-resolve
+HOST-SUFFIX,chat.com
+HOST-SUFFIX,chatgpt.com
+HOST-SUFFIX,oaistatic.com
+HOST-SUFFIX,oaiusercontent.com
+HOST-SUFFIX,openai.com
+HOST-SUFFIX,sora.com
 
-# https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list
-# NAME: Claude
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:18:28
-# DOMAIN: 1
-# DOMAIN-SUFFIX: 2
-# TOTAL: 3
-DOMAIN,cdn.usefathom.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
 
-#Grok AI
-DOMAIN-SUFFIX,grok.com
-DOMAIN,imgs.search.brave.com
-DOMAIN,pbs.twimg.com
+# =========================
+# Copilot
+# =========================
+HOST,api.githubcopilot.com
+HOST,copilot-proxy.githubusercontent.com
+HOST,copilot.microsoft.com
+HOST,sydney.bing.com
+
+
+# =========================
+# Gemini / Google AI
+# =========================
+HOST,ai.google.dev
+HOST,aida.googleapis.com
+HOST,aistudio.google.com
+HOST,alkalicore-pa.clients6.google.com
+HOST,alkalimakersuite-pa.clients6.google.com
+HOST,bard.google.com
+HOST,deepmind.com
+HOST,deepmind.google
+HOST,geller-pa.googleapis.com
+HOST,gemini.google
+HOST,gemini.google.com
+HOST,generativeai.google
+HOST,generativelanguage.googleapis.com
+HOST,makersuite.google.com
+HOST,proactivebackend-pa.googleapis.com
+HOST,robinfrontend-pa.googleapis.com
+HOST,webchannel-alkalimakersuite-pa.clients6.google.com
+HOST,notebooklm.google
+HOST,notebooklm.google.com
+HOST,jules.google
+HOST,jules.google.com
+HOST,labs.google
+HOST,aisandbox-pa.googleapis.com
+
+
+# =========================
+# Google Antigravity
+# =========================
+HOST,antigravity.google
+
+
+# =========================
+# Anthropic
+# =========================
+HOST-SUFFIX,anthropic.com
+HOST-SUFFIX,claude.ai
+HOST-SUFFIX,claudeusercontent.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP6-CIDR,2607:6bc0::/48,no-resolve
+
+
+# =========================
+# JetBrains AI
+# =========================
+HOST-SUFFIX,grazie.ai
+HOST-SUFFIX,grazie.aws.intellij.net
+HOST-SUFFIX,jetbrains.ai
+
+
+# =========================
+# Meta AI
+# =========================
+HOST,imagine.meta.com
+HOST-SUFFIX,meta.ai
+
+
+# =========================
+# Perplexity
+# =========================
+HOST,pplx-res.cloudinary.com
+HOST-SUFFIX,pplx.ai
+HOST-SUFFIX,perplexity.ai
+HOST-SUFFIX,perplexity.com
+
+
+# =========================
+# Mistral AI
+# =========================
+HOST,chat.mistral.ai
+HOST,console.mistral.ai
+HOST-SUFFIX,mistral.ai
+
+
+# =========================
+# Grok / X AI
+# =========================
+HOST,api.x.ai
+HOST-SUFFIX,x.ai
+HOST-SUFFIX,grok.com
+
+
+# =========================
+# Trae AI
+# =========================
+HOST,trae-api-sg.mchost.guru
+HOST-SUFFIX,trae.ai
+
+
+# =========================
+# OpenRouter / Others
+# =========================
+HOST-SUFFIX,openrouter.ai
+HOST-SUFFIX,tokenflux.ai
+HOST-SUFFIX,groq.com
+HOST-SUFFIX,together.ai
+HOST-SUFFIX,fireworks.ai
+HOST,api.hyperbolic.xyz
+HOST-SUFFIX,hyperbolic.ai
+HOST-SUFFIX,jina.ai
+HOST-SUFFIX,voyageai.com
+HOST,aiplatform.googleapis.com
+HOST-SUFFIX,poe.com
