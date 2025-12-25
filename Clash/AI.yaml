@@ -17,7 +17,7 @@ payload:
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,sora.com
-  - DOMAIN-SUFFIX,clients6.google.com
+
   # =========================
   # Copilot
   # =========================
@@ -52,7 +52,13 @@ payload:
   - DOMAIN,jules.google.com
   - DOMAIN,labs.google
   - DOMAIN,aisandbox-pa.googleapis.com
-
+  - DOMAIN,optimizationguide-pa.googleapis.com
+  - DOMAIN,content-autofill.googleapis.com
+  - DOMAIN,waa-pa.clients6.google.com
+  - DOMAIN,signaler-pa.clients6.google.com
+  - DOMAIN,clients4.google.com
+  - DOMAIN,lh3.googleusercontent.com
+  
   # =========================
   # Google Antigravity
   # =========================
