@@ -8,14 +8,12 @@ HOST,openaiapi-site.azureedge.net
 HOST,openaicomproductionae4b.blob.core.windows.net
 HOST,production-openaicom-storage.azureedge.net
 HOST,turn.livekit.cloud
-
 HOST-SUFFIX,chat.com
 HOST-SUFFIX,chatgpt.com
 HOST-SUFFIX,oaistatic.com
 HOST-SUFFIX,oaiusercontent.com
 HOST-SUFFIX,openai.com
 HOST-SUFFIX,sora.com
-
 
 # =========================
 # Copilot
