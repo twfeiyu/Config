@@ -59,6 +59,7 @@ payload:
   - DOMAIN-SUFFIX,clients4.google.com
   - DOMAIN-SUFFIX,lh3.googleusercontent.com
   - DOMAIN-SUFFIX,apis.google.com
+  - DOMAIN-SUFFIX,play.google.com
   
   # =========================
   # Google Antigravity
