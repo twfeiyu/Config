@@ -51,13 +51,14 @@ payload:
   - DOMAIN,jules.google
   - DOMAIN,jules.google.com
   - DOMAIN,labs.google
-  - DOMAIN,aisandbox-pa.googleapis.com
-  - DOMAIN,optimizationguide-pa.googleapis.com
-  - DOMAIN,content-autofill.googleapis.com
-  - DOMAIN,waa-pa.clients6.google.com
-  - DOMAIN,signaler-pa.clients6.google.com
-  - DOMAIN,clients4.google.com
-  - DOMAIN,lh3.googleusercontent.com
+  - DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
+  - DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
+  - DOMAIN-SUFFIX,content-autofill.googleapis.com
+  - DOMAIN-SUFFIX,waa-pa.clients6.google.com
+  - DOMAIN-SUFFIX,signaler-pa.clients6.google.com
+  - DOMAIN-SUFFIX,clients4.google.com
+  - DOMAIN-SUFFIX,lh3.googleusercontent.com
+  - DOMAIN-SUFFIX,apis.google.com
   
   # =========================
   # Google Antigravity
