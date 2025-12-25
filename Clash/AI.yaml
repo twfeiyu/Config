@@ -2,8 +2,6 @@ payload:
   # =========================
   # OpenAI
   # =========================
-  - AND,(DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com)
-  - AND,(DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net)
   - DOMAIN,chatgpt.livekit.cloud
   - DOMAIN,host.livekit.cloud
   - DOMAIN,openai.com.cdn.cloudflare.net
@@ -17,7 +15,7 @@ payload:
   - DOMAIN-SUFFIX,oaiusercontent.com
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,sora.com
-
+  - DOMAIN-SUFFIX,clients6.google.com
   # =========================
   # Copilot
   # =========================
