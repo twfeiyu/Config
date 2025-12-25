@@ -4,7 +4,6 @@ payload:
   # =========================
   - AND,(DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com)
   - AND,(DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net)
-
   - DOMAIN,chatgpt.livekit.cloud
   - DOMAIN,host.livekit.cloud
   - DOMAIN,openai.com.cdn.cloudflare.net
@@ -20,7 +19,6 @@ payload:
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,sora.com
 
-
   # =========================
   # Copilot
   # =========================
@@ -28,7 +26,6 @@ payload:
   - DOMAIN,copilot-proxy.githubusercontent.com
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,sydney.bing.com
-
 
   # =========================
   # Gemini / Google AI
@@ -56,13 +53,12 @@ payload:
   - DOMAIN,jules.google.com
   - DOMAIN,labs.google
   - DOMAIN,aisandbox-pa.googleapis.com
-
+  - DOMAIN,clients6.google.com
 
   # =========================
   # Google Antigravity
   # =========================
   - DOMAIN,antigravity.google
-
 
   # =========================
   # Anthropic
@@ -73,7 +69,6 @@ payload:
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
 
-
   # =========================
   # JetBrains AI
   # =========================
@@ -81,13 +76,11 @@ payload:
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
   - DOMAIN-SUFFIX,jetbrains.ai
 
-
   # =========================
   # Meta AI
   # =========================
   - DOMAIN,imagine.meta.com
   - DOMAIN-SUFFIX,meta.ai
-
 
   # =========================
   # Perplexity
@@ -97,14 +90,12 @@ payload:
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,perplexity.com
 
-
   # =========================
   # Mistral AI
   # =========================
   - DOMAIN,chat.mistral.ai
   - DOMAIN,console.mistral.ai
   - DOMAIN-SUFFIX,mistral.ai
-
 
   # =========================
   # Grok / X AI
@@ -113,13 +104,11 @@ payload:
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
 
-
   # =========================
   # Trae AI
   # =========================
   - DOMAIN,trae-api-sg.mchost.guru
   - DOMAIN-SUFFIX,trae.ai
-
 
   # =========================
   # OpenRouter / Others
