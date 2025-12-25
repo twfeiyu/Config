@@ -53,7 +53,7 @@ payload:
   - DOMAIN,jules.google.com
   - DOMAIN,labs.google
   - DOMAIN,aisandbox-pa.googleapis.com
-  - DOMAIN,clients6.google.com
+  - DOMAIN-SUFFIX,clients6.google.com
 
   # =========================
   # Google Antigravity
