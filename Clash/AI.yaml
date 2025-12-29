@@ -51,7 +51,7 @@ payload:
   - DOMAIN,jules.google
   - DOMAIN,jules.google.com
   - DOMAIN,labs.google
-  - DOMAIN,aisandbox-pa.googleapis.com,US
+  - DOMAIN,aisandbox-pa.googleapis.com
   - DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
   - DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
   - DOMAIN-SUFFIX,content-autofill.googleapis.com
