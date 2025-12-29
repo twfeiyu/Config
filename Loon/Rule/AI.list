@@ -46,6 +46,16 @@ DOMAIN, jules.google
 DOMAIN, jules.google.com
 DOMAIN, labs.google
 DOMAIN, aisandbox-pa.googleapis.com
+DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
+DOMAIN-SUFFIX,content-autofill.googleapis.com
+DOMAIN-SUFFIX,waa-pa.clients6.google.com
+DOMAIN-SUFFIX,signaler-pa.clients6.google.com
+DOMAIN-SUFFIX,clients4.google.com
+DOMAIN-SUFFIX,lh3.googleusercontent.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,play.google.com
+DOMAIN-SUFFIX,www.google.com
+DOMAIN-SUFFIX,www.gstatic.com
 
 # Google Antigravity
 DOMAIN, antigravity.google
