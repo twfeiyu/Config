@@ -50,6 +50,16 @@ HOST,jules.google
 HOST,jules.google.com
 HOST,labs.google
 HOST,aisandbox-pa.googleapis.com
+HOST-SUFFIX,optimizationguide-pa.googleapis.com
+HOST-SUFFIX,content-autofill.googleapis.com
+HOST-SUFFIX,waa-pa.clients6.google.com
+HOST-SUFFIX,signaler-pa.clients6.google.com
+HOST-SUFFIX,clients4.google.com
+HOST-SUFFIX,lh3.googleusercontent.com
+HOST-SUFFIX,apis.google.com
+HOST-SUFFIX,play.google.com
+HOST-SUFFIX,www.google.com
+HOST-SUFFIX,www.gstatic.com
 
 
 # =========================
