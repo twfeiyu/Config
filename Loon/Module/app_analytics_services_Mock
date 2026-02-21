@@ -1,0 +1,11 @@
+#!name = Gemini Analytics 204 Mock
+#!desc = 针对 app-analytics-services.com 拦截并返回 204 No Content，解决 Gemini App 因数据上报导致的潜在卡顿或报错。
+#!author = twfeiyu
+#!date = 2026-02-22
+
+[MITM]
+hostname = app-analytics-services.com
+
+[Script]
+# 拦截统计请求并返回 204
+http-request ^https?:\/\/app-analytics-services\.com script-path=https://raw.githubusercontent.com/twfeiyu/Config/refs/heads/main/Loon/Scripts/mock_204.js, requires-body=false, tag=Gemini_Analytics_Mock
