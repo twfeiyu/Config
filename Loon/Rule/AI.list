@@ -67,7 +67,7 @@ DOMAIN, oauth2.googleapis.com
 DOMAIN, notifications-pa.googleapis.com
 DOMAIN, mtalk.google.com
 DOMAIN, oauthaccountmanager.googleapis.com
-DOMAIN, app-analytics-services.com,REJECT-DICT
+DOMAIN, people-pa.googleapis.com
 
 # Google Antigravity
 DOMAIN-SUFFIX, antigravity.google
