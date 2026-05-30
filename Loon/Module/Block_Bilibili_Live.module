@@ -1,13 +1,31 @@
-#!name=屏蔽B站直播
-#!desc=屏蔽B站直播(2022-09-16 08:50)
+#!name=全面屏蔽B站直播
+#!desc=深度屏蔽B站直播頁籤、直播間與視訊流 (升級版)
 
 [Rule]
-#DOMAIN-SUFFIX,api.sobot.com,REJECT
-DOMAIN-SUFFIX,live-trace.bilibili.com,REJECT
+# 屏蔽直播核心與追蹤網域
 DOMAIN-SUFFIX,api.live.bilibili.com,REJECT
+DOMAIN-SUFFIX,live-trace.bilibili.com,REJECT
+DOMAIN-SUFFIX,live-push.bilibili.com,REJECT
+DOMAIN-SUFFIX,live.bilibili.com,REJECT
+# 屏蔽常見的直播流 CDN 關鍵字
+DOMAIN-KEYWORD,live-play,REJECT
+DOMAIN-KEYWORD,live-bvc,REJECT
 
-[URL Rewrite]
-#屏蔽公众号直播姬充值接口
-^https?:\/\/api.bilibili.com\/x\/web-interface\/nav reject-200
-#屏蔽直播间
-^http:\/\/.*\/live-bvc\/\d+\/ reject-200
+https://ahrefs.com/writing-tools/paragraph-rewriter
+# 1. 屏蔽 App 首頁的直播頁籤與推薦流 (返回空 JSON 防轉圈)
+^https?:\/\/app\.bilibili\.com\/x\/v2\/show\/live\/.* reject-dict
+^https?:\/\/api\.live\.bilibili\.com\/xlive\/.* reject-dict
+
+# 2. 屏蔽 Web 端導覽列與直播介面
+^https?:\/\/api\.bilibili\.com\/x\/web-interface\/nav reject-dict
+
+# 3. 徹底屏蔽直播間視訊流 (修復 HTTPS 匹配，放寬路徑限制)
+^https?:\/\/.*\/live-bvc\/.* reject-200
+^https?:\/\/.*\/live-play\/.* reject-200
+
+# 4. 屏蔽直播彈幕與 WebSocket 連線
+^https?:\/\/broadcast\.chat\.bilibili\.com\/.* reject-200
+
+[MITM]
+# 必須設定 MITM 才能成功解密並攔截 HTTPS 的 URL Rewrite
+hostname = %APPEND% api.live.bilibili.com, app.bilibili.com, api.bilibili.com, broadcast.chat.bilibili.com
