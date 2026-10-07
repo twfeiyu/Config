@@ -32,8 +32,6 @@ payload:
   - DOMAIN,ai.google.dev
   - DOMAIN,aida.googleapis.com
   - DOMAIN,aistudio.google.com
-  - DOMAIN,alkalicore-pa.clients6.google.com
-  - DOMAIN,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,bard.google.com
   - DOMAIN,deepmind.com
   - DOMAIN,deepmind.google
@@ -45,7 +43,6 @@ payload:
   - DOMAIN,makersuite.google.com
   - DOMAIN,proactivebackend-pa.googleapis.com
   - DOMAIN,robinfrontend-pa.googleapis.com
-  - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
   - DOMAIN,notebooklm.google
   - DOMAIN,notebooklm.google.com
   - DOMAIN,jules.google
@@ -54,15 +51,13 @@ payload:
   - DOMAIN,aisandbox-pa.googleapis.com
   - DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
   - DOMAIN-SUFFIX,content-autofill.googleapis.com
-  - DOMAIN-SUFFIX,waa-pa.clients6.google.com
-  - DOMAIN-SUFFIX,signaler-pa.clients6.google.com
-  - DOMAIN-SUFFIX,clients4.google.com
   - DOMAIN-SUFFIX,lh3.googleusercontent.com
   - DOMAIN-SUFFIX,apis.google.com
   - DOMAIN-SUFFIX,play.google.com
   - DOMAIN-SUFFIX,www.google.com
   - DOMAIN-SUFFIX,www.gstatic.com
-
+  - DOMAIN-WILDCARD,*clients*.google.com
+  - DOMAIN-SUFFIX,mtalk.google.com
   
   # =========================
   # Google Antigravity
